@@ -12,3 +12,7 @@ else
 	echo "Run 'make build' first"
 	exit 1
 fi
+
+EXTENSION="yaml"
+echo "Packaging keoscluster_v1beta1_template-$VERSION..."
+tar czf "$DIR"/keoscluster_v1beta1_template-${VERSION}.${EXTENSION} "$DIR"/keoscluster_v1beta1_template.${EXTENSION}
